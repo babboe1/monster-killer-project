@@ -6,6 +6,7 @@ const HEAL_PLAYER_VALUE = 20;
 let chosenMaxLIfe = 100;
 let currentMonsterHealth = chosenMaxLIfe;
 let currentPlayerHealth = chosenMaxLIfe;
+let hasBonusLife = true;
 
 adjustHealthBars(chosenMaxLIfe);
 
@@ -48,7 +49,6 @@ function healPlayerHandler() {
    }
    increasePlayerHealth(HEAL_PLAYER_VALUE);
    currentPlayerHealth += healValue;
-   
 }
 
 attackBtn.addEventListener('click', attackHandler);
