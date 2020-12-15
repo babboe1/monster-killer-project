@@ -3,12 +3,18 @@ const STRONG_ATTACK_VALUE = 17;
 const MONSTER_ATTACK_VALUE = 14;
 const HEAL_PLAYER_VALUE = 20;
 
-let chosenMaxLIfe = 100;
-let currentMonsterHealth = chosenMaxLIfe;
-let currentPlayerHealth = chosenMaxLIfe;
+let chosenMaxLife = 100;
+let currentMonsterHealth = chosenMaxLife;
+let currentPlayerHealth = chosenMaxLife;
 let hasBonusLife = true;
 
-adjustHealthBars(chosenMaxLIfe);
+adjustHealthBars(chosenMaxLife);
+
+function reset() {
+   currentMonsterHealth = chosenMaxLife;
+   currentPlayerHealth = chosenMaxLife;
+   resetGame(chosenMaxLife);
+}
 
 function endRound() {
    const initialPlayerHealth = currentPlayerHealth;
@@ -54,9 +60,9 @@ function strongAttackHandler() {
 }
 function healPlayerHandler() {
    let healValue;
-   if (currentPlayerHealth >= chosenMaxLIfe - HEAL_PLAYER_VALUE) {
+   if (currentPlayerHealth >= chosenMaxLife - HEAL_PLAYER_VALUE) {
       alert("you can't heal higher than max health");
-      healValue = chosenMaxLIfe - currentPlayerHealth;
+      healValue = chosenMaxLife - currentPlayerHealth;
    } else {
       healValue = HEAL_PLAYER_VALUE;
    }
