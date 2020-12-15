@@ -11,6 +11,7 @@ let hasBonusLife = true;
 adjustHealthBars(chosenMaxLIfe);
 
 function endRound() {
+   const initialPlayerHealth = currentPlayerHealth;
    const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
    currentPlayerHealth -= playerDamage;
    if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
