@@ -30,6 +30,9 @@ function endRound() {
    } else if (currentMonsterHealth <= 0 && currentPlayerHealth <= 0) {
       alert('you have a draw!!');
    }
+   if (currentPlayerHealth <= 0 || currentMonsterHealth <= 0) {
+      reset();
+   }
 }
 
 function attackMonster(mode) {
