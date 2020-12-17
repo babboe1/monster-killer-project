@@ -5,6 +5,11 @@ const HEAL_PLAYER_VALUE = 20;
 const enteredNumber = prompt('maximum life for you and the monster', '100');
 const MODE_ATTACK = 'ATTACK';
 const MODE_STRONG_ATTACK = 'STRONG_ATTACK';
+const LOG_EVENT_PLAYER_ATTACK = 'PLAYER_ATTACK';
+const LOG_EVENT_PLAYER_STRONG_ATTACK = 'PLAYER_STRONG_ATTACK';
+const LOG_EVENT_MONSTER_ATTACK = 'MONSTER_ATTACK';
+const LOG_EVENT_PLAYER_HEAL = 'PLAYER_HEAL';
+const LOG_EVENT_GAME_OVER = 'GAVE_OVER';
 
 let chosenMaxLife = +enteredNumber;
 
