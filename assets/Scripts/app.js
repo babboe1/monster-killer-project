@@ -48,10 +48,10 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
          event: event,
          value: value,
          finalMonsterHealth: monsterHealth,
-         finalPlayerHealth: playerHealth 
+         finalPlayerHealth: playerHealth,
       };
-      
    }
+   battleLog.push(logEntry);
 }
 function reset() {
    currentMonsterHealth = chosenMaxLife;
