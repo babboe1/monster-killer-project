@@ -55,6 +55,23 @@ function writeToLog(event, value, monsterHealth, playerHealth) {
             logEntry = {};
       }
    battleLog.push(logEntry);
+
+   // if (event === LOG_EVENT_PLAYER_ATTACK) {
+   //    logEntry.target = 'MONSTER';
+   // } else if (event === LOG_EVENT_PLAYER_STRONG_ATTACK) {
+   //    logEntry.target = 'MONSTER';
+   // } else if (event === LOG_EVENT_MONSTER_ATTACK) {
+   //    logEntry.target = 'PLAYER';
+   // } else if (event === LOG_EVENT_PLAYER_HEAL) {
+   //    logEntry.target = 'PLAYER';
+   // } else if (event === LOG_EVENT_GAME_OVER) {
+   //    logEntry = {
+   //    event: event,
+   //    value: value,
+   //    finalMonsterHealth: monsterHealth,
+   //    finalPlayerHealth: playerHealth,};
+   // }
+   // battleLog.push(logEntry);
 }
 function reset() {
    currentMonsterHealth = chosenMaxLife;
