@@ -28,7 +28,7 @@ adjustHealthBars(chosenMaxLife);
 
 function writeToLog(event, value, monsterHealth, playerHealth) {
    let logEntry = {
-      target: 'MONSTER',
+      target: '',
       event: event,
       value: value,
       finalMonsterHealth: monsterHealth,
@@ -105,7 +105,7 @@ function endRound() {
    if (currentPlayerHealth <= 0 || currentMonsterHealth <= 0) {
       reset();
    }
-}
+} 
 
 function attackMonster(mode) {
    let maxDamage;
@@ -139,7 +139,7 @@ function healPlayerHandler() {
    increasePlayerHealth(HEAL_PLAYER_VALUE);
    currentPlayerHealth += healValue;
    writeToLog(
-      LOG_EVent_PLAYER_HEAL,
+      LOG_EVENT_PLAYER_HEAL,
       healValue,
       currentMonsterHealth,
       currentPlayerHealth
