@@ -178,9 +178,7 @@ function printLogHandler() {
          if (Object.hasOwnProperty.call(logEntry, key)) {
             console.log(`${key} => ${logEntry[key]}`);
          }
-   for (let i = 0; i < battleLog.length; i++) {
-      console.log(battleLog[i]);
-   }
+      }
       i++;
       // console.log(battleLog);
    }
