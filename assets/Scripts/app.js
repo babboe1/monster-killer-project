@@ -167,10 +167,17 @@ function healPlayerHandler() {
    );
 }
 function printLogHandler() {
-   for (let i = 1; i < 100; ) {
-      i = i * 2;
-      console.log(i);
-   }
+   // for (let i = 0; i < battleLog.length; i++) {
+   //    console.log(battleLog[i]);
+   // }
+   let i = 0;
+   for (const logEntry of battleLog) {
+      console.log(`#${i}`);
+
+      for (const key in logEntry) {
+         if (Object.hasOwnProperty.call(logEntry, key)) {
+            console.log(`${key} => ${logEntry[key]}`);
+         }
    for (let i = 0; i < battleLog.length; i++) {
       console.log(battleLog[i]);
    }
