@@ -8,5 +8,4 @@ i just want a build a simple webpage implementing basic knowledge learnt so far 
    -  [Links](#links)
    -  [My process](#my-process)
    -  [Built with](#built-with)
-
-
+-  [Author](#author)
