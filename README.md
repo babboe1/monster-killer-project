@@ -1,5 +1,5 @@
 # first-js-project
-i just want a build a simple web application implementing basic knowledge learnt so far on java script
+This is a simple web application implementing basic knowledge learnt so far on java script
 
 ## Table of contents
 
