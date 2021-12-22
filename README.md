@@ -1,5 +1,5 @@
 # first-js-project
-This is a simple web application built by implementing basic knowledge learnt so far on java script such as loops, if statemets .
+This is a simple web application built by implementing basic knowledge learnt so far on java script such as loops, if statemets and funtions.
 
 ## Table of contents
 
