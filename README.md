@@ -7,7 +7,6 @@ This is a simple web application built by implementing basic knowledge learnt so
    -  [The challenge](#the-challenge)
    -  [Links](#links)
    -  [My process](#my-process)
-   -  [Built with
 -  [Author](#author)
 
 ## Overview
